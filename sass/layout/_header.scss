@@ -15,15 +15,16 @@
 
     &__logo-box{
         position: absolute;
-        top: 4rem;
-        left: 7rem;
+        top: 2.5rem;
+        left: 5rem;
     }
     &__logo {
         height: 8.5rem;
 
         &:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
             animation: rotate 1s ease-out;
+            cursor: pointer;
         }
     }
     

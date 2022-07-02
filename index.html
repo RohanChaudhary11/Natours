@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,6 +16,26 @@
     </head>
 
     <body>
+
+        <div class="navigation" id="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle" href="#navigation">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon"></span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#section-about" class="navigation__link"><span>01</span>About Natours</a></li>
+                    <li class="navigation__item"><a href="#section-features" class="navigation__link"><span>02</span>Your benifits</a></li>
+                    <li class="navigation__item"><a href="#section-tours" class="navigation__link"><span>03</span>Popular tours</a></li>
+                    <li class="navigation__item"><a href="#section-stories" class="navigation__link"><span>04</span>Stories</a></li>
+                    <li class="navigation__item"><a href="#section-book" class="navigation__link"><span>05</span>Book now</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
         <header class="header">
             <div class="header__logo-box">
                 <img src="images/logo-white.png" alt="Logo" class="header__logo" />
@@ -27,14 +47,14 @@
                     <span class="heading-primary--sub">is where life happens</span>
                 </h1>
 
-                <a href="#" class="btn btn--white btn--animated">Discover our books</a>
+                <a href="#section-tours" class="btn btn--white btn--animated">Discover our books</a>
             </div>
             
         </header>
 
 
         <main>
-            <section class="section-about">
+            <section class="section-about" id="section-about">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Exciting books for voracious readers
@@ -64,7 +84,7 @@
             </section>
 
 
-            <section class="section-features">
+            <section class="section-features" id="section-features">
 
                 <div class="row">
                     <div class="col-1-of-4">
@@ -108,7 +128,7 @@
             </section>
 
 
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
 
                 <div class="u-center-text u-margin-bottom-medium">
                     <h2 class="heading-secondary">
@@ -142,7 +162,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$11.98</p>
                                     </div>
-                                    <a href="" class="btn btn--white">Book Now!</a>
+                                    <a href="#popup" class="btn btn--white">Book Now!</a>
                                 </div>
                             </div>
                         </div>
@@ -174,7 +194,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$23.16</p>
                                     </div>
-                                    <a href="" class="btn btn--white">Book Now!</a>
+                                    <a href="#popup" class="btn btn--white">Book Now!</a>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +226,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$10.26</p>
                                     </div>
-                                    <a href="" class="btn btn--white">Book Now!</a>
+                                    <a href="#popup" class="btn btn--white">Book Now!</a>
                                 </div>
                             </div>
                         </div>
@@ -220,7 +240,7 @@
 
             </section>
 
-            <section class="section-stories">
+            <section class="section-stories" id="section-stories">
 
                 <div class="bg-video">
                     <video class="bg-video__content" autoplay muted loop >
@@ -277,7 +297,7 @@
 
             </section>
 
-            <section class="section-book">
+            <section class="section-book" id="section-book">
                 <div class="row">
                     <div class="book">
                         <div class="book__form">
@@ -352,6 +372,24 @@
                 </div>
             </div>
         </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="images/popup-img1.jpg" alt="popup img" class="popup__image">
+                    <img src="images/popup-img2.jpg" alt="popup img" class="popup__image">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &dash; Please read these terms before booking</h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis odit nihil dicta natus unde illo eum, repudiandae hic nisi eos odio. A quisquam facere velit amet laboriosam recusandae provident fugit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, modi repellat! Recusandae suscipit quia aliquid ullam magni, minus molestiae consectetur magnam totam libero quaerat commodi, ratione, minima qui nisi perferendis? 
+                    </p>
+                    <a href="#" class="btn btn--green">Book now</a>
+                </div>
+            </div>
+        </div>
 
         <!--
         <section class="grid-test">
